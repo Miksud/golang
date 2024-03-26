@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func main() {
+	for {  //обьявляем цикл
+		var total float64 // создаем переменную тотал
+		fmt.Println("Sent value")
+		fmt.Scanln(&total) // ввод в консоль
+		if total >= 100 && total <= 499 {
+			total = total * 0.9
+			fmt.Println("It's ok - you have discont 10%", "\n", "price now - ", total)
+		} else if total >= 500 {
+			total = total * 0.75
+			fmt.Println("It's great! - you have discont 25%", "\n", "price now - ", total)
+		} else {
+			fmt.Println("sry, you don't have discont", "\n", "price now - ", total)
+		}
+		fmt.Println("Do you want to continue? (y/n)") // сообщение в конце цикла
+		var answer string // создание переменной для прерывания
+		fmt.Scanln(&answer) // ввод в консоль
+		if answer != "y" { // если ввести y цикл завершится
+			break  
+		}
+	}
+}
