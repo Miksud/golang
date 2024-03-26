@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var a float64
+	fmt.Scanln(&a)
+	if a > 0 && a <= 12 {
+		fmt.Println("Ребенок")
+	} else if a >= 13 && a <= 17 {
+		fmt.Println("Подросток")
+	} else if a >= 18 && a <= 63 {
+		fmt.Println("Взрослый")
+	} else if a >= 64 {
+		fmt.Println("Взрослый")
+	}
+}
