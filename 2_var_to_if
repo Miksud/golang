@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var ves float64
+	var rost float64
+	fmt.Println("Введите свой рост и вес, чтобы знать можете ли вы прыгать")
+	fmt.Println("Введите вес:")
+	fmt.Scanln(&ves)
+	fmt.Println("Введите Рост:")
+	fmt.Scanln(&rost)
+	if ves >= 100 && rost <= 150 {
+		fmt.Println("Низя")
+	} else if ves <= 99 && rost <= 150 {
+		fmt.Println("низя")
+	} else if ves >= 100 && rost >= 151 {
+		fmt.Println("Низя")
+	} else if ves <= 99 && rost >= 151 {
+		fmt.Println("Можно")
+	}
+}
