@@ -61,6 +61,8 @@
 ## Other
 [https://github.com/golang/go/wiki](https://github.com/golang/go/wiki)
 
+https://gobyexample.com.ru/
+
 ## Архитектура приложений
 1. [Clean architecture](http://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 2. [Заблуждения clean architecture](https://habr.com/company/mobileup/blog/335382/)
